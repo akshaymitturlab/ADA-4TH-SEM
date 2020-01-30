@@ -31,8 +31,7 @@ int main() {
     cin >> key;
     
     int x = binarysearch(arr, n, key);
-    if (x == -1) cout << "Not Found" << endl;
-    else cout << "Found" << endl;
-
+    cout << x << endl;
+    
     return 0;
 }
