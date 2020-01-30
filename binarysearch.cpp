@@ -17,21 +17,24 @@ int binarysearch(int arr[], int n, int key) {
 }
 
 int main() {
-    int n;
-    cin >> n;
-    int arr[n];
+    int test;
+    cin >> test;
+    while (test) {
+        int n, key;
+        cin >> n >> key;
+        int arr[n];
+        
+        // INPUT SORTED ARRAY
+        
+        for (int i = 0; i < n; ++i) {
+            cin >> arr[i];
+        }
+        
+        int x = binarysearch(arr, n, key);
+        cout << x << endl;
+        test --;
     
-    // INPUT SORTED ARRAY
-    
-    for (int i = 0; i < n; ++i) {
-        cin >> arr[i];
     }
-    
-    int key;
-    cin >> key;
-    
-    int x = binarysearch(arr, n, key);
-    cout << x << endl;
     
     return 0;
 }
