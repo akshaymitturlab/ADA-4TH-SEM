@@ -6,6 +6,7 @@ using namespace std;
 
 int binsearch(vector<int> &vec, int key) {
     int begr = 0, endr = vec.size() - 1, begl = 0, endle = vec.size() - 1, resultl = -1, resultr = -1, midl, midr;
+    sort(vec.begin(), vec.end());
     while (begr <= endr && begl <= endle) {
         midl = (begl + endle) / 2;
         midr = (begr + endr) / 2;
