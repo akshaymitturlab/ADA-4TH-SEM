@@ -56,6 +56,5 @@ int main() {
     auto diff = end - start;
     
     cout << chrono::duration <double, milli> (diff).count() << " ms" << endl;
-
     return 0;
 }
