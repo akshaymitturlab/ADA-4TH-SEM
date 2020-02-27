@@ -17,7 +17,7 @@ void insertionSort(int arr[], int n) {
 }  
 
 int main() {
-    int n, k;
+    int n;
     cin >> n;
     int arr[n];
     
