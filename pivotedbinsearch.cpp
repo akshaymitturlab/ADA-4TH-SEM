@@ -45,7 +45,7 @@ int main() {
     
     int arr[n];
     
-    for (int i = 0; i < n; ++i) cin >> arr[n];
+    for (int i = 0; i < n; ++i) cin >> arr[i];
     
     cout << "Index of the element is : " <<  pivotedBinarySearch(arr, n, key) << endl;
   
