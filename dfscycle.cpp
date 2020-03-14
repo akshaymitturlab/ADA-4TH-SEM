@@ -9,9 +9,9 @@ bool dfs(int vertex, set<int>&visited, int parent,int n) {
 	visited.insert(vertex);
   	for(int v = 0; v<n; v++) {
         	if(arr[vertex][v]) {
-         		if(v == parent)    //if v is the parent not move that direction
+         		if(v == parent)
             			continue;
-         		if(visited.find(v) != visited.end())    //if v is already visited
+         		if(visited.find(v) != visited.end())
             			return true;
          		if(dfs(v, visited, vertex,n))
             			return true;
